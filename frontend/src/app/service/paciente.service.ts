@@ -1,16 +1,19 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Paciente } from '../model/paciente';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
+
+
 export class PacienteService {
 
-  constructor(private http : HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  gravar(obj: Paciente): Observable<any>{
-    return this.http.put("http://localhost:8080/api/paciente", obj)
+  public salvar(obj: Paciente): Observable<Paciente> {
+    return this.http.post<Paciente>('http://localhost:8090/pacientes', obj);
   }
+
 }
