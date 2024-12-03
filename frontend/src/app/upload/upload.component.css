@@ -3,3 +3,9 @@ p{
     font-size: 34px;
     color: brown;
 }
+form{
+    border: 5px solid #63abbd;
+    padding:20px 20px 20px 20px; 
+    border-radius: 10px;
+    background-color: rgb(74, 125, 177);
+}
