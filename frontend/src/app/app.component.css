@@ -1,13 +1,20 @@
 .container .btn {
     margin: 10px;
-    
-    
   }
 h1{
     text-align: center;
 }
 div{
     text-align: center;
+}
+.navbar{
+    background-color: azure;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
   
   

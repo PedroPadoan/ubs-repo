@@ -4,8 +4,8 @@ p{
     color: brown;
 }
 form{
-    border: 5px solid #63abbd;
+    border: 1px solid #000000;
     padding:20px 20px 20px 20px; 
     border-radius: 10px;
-    background-color: rgb(74, 125, 177);
+    background-color: rgb(223, 226, 228);
 }
